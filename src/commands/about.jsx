@@ -16,6 +16,6 @@ export default function about(args, profile) {
   );
 }
 
-export function whoami(args, profile) {
-  return `${profile.name.toLowerCase()}@portfolio`;
+export function whoami() {
+  return 'Mohamed Jaris';
 }

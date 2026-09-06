@@ -50,7 +50,7 @@ export default function Terminal() {
           <span className="btn-minimize" />
           <span className="btn-maximize" />
         </div>
-        <span className="titlebar-text">visitor@portfolio: ~</span>
+        <span className="titlebar-text">visitor@portfolio : Mohamed Jaris</span>
         <div className="titlebar-spacer" />
       </div>
 
