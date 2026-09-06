@@ -1,0 +1,265 @@
+/* ============================================
+   Terminal Portfolio — Kitty Dark Theme
+   ============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  background: #080808;
+  font-family: 'Consolas', 'Menlo', 'Monaco', 'Courier New', monospace;
+  font-size: 14px;
+  color: #e0e0e0;
+  overflow: hidden;
+}
+
+/* ---- Terminal Window ---- */
+.terminal-window {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+}
+
+/* ---- Title Bar ---- */
+.terminal-titlebar {
+  display: flex;
+  align-items: center;
+  background: #191919;
+  padding: 8px 12px;
+  min-height: 36px;
+  border-bottom: 1px solid #2a2a2a;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.titlebar-buttons {
+  display: flex;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.titlebar-buttons span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.btn-close {
+  background: #ff5f57;
+}
+
+.btn-minimize {
+  background: #ffbd2e;
+}
+
+.btn-maximize {
+  background: #28c840;
+}
+
+.titlebar-text {
+  color: #888;
+  font-size: 12px;
+  flex: 1;
+  text-align: center;
+}
+
+.titlebar-spacer {
+  width: 68px; /* balance the buttons on the left */
+}
+
+/* ---- Terminal Body ---- */
+.terminal-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  cursor: text;
+  background: #080808;
+}
+
+/* ---- Scrollbar ---- */
+.terminal-body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+.terminal-body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ---- Terminal Lines ---- */
+.terminal-line {
+  margin-bottom: 4px;
+}
+
+.terminal-prompt-line,
+.command-input-line {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  line-height: 1.6;
+}
+
+.prompt-user {
+  color: #33ff33;
+  font-weight: bold;
+}
+
+.prompt-at {
+  color: #888;
+}
+
+.prompt-host {
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+.prompt-colon {
+  color: #888;
+}
+
+.prompt-path {
+  color: #a29bfe;
+  font-weight: bold;
+}
+
+.prompt-dollar {
+  color: #888;
+  margin-right: 8px;
+}
+
+.prompt-input {
+  color: #e0e0e0;
+}
+
+/* ---- Output ---- */
+.terminal-output {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.terminal-output pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: inherit;
+  color: #e0e0e0;
+  margin: 0;
+}
+
+.command-output {
+  padding: 4px 0;
+}
+
+.command-output p {
+  line-height: 1.6;
+}
+
+.command-output a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.command-output a:hover {
+  text-decoration: underline;
+  color: #4dd0e1;
+}
+
+.command-output table {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.command-output td {
+  padding: 2px 0;
+}
+
+/* ---- Command Input ---- */
+.command-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e0e0e0;
+  font-family: inherit;
+  font-size: inherit;
+  caret-color: #33ff33;
+  line-height: 1.6;
+}
+
+.command-input::placeholder {
+  color: #444;
+}
+
+/* ---- Banner ---- */
+.banner pre {
+  color: #33ff33;
+  line-height: 1.2;
+}
+
+/* ---- Mobile Responsive ---- */
+@media (max-width: 768px) {
+  html, body, #root {
+    font-size: 11px;
+  }
+
+  .terminal-body {
+    padding: 8px;
+  }
+
+  .banner pre {
+    font-size: 6px;
+    line-height: 1.1;
+    overflow-x: auto;
+  }
+
+  .terminal-titlebar {
+    padding: 6px 8px;
+    min-height: 30px;
+  }
+
+  .titlebar-buttons span {
+    width: 10px;
+    height: 10px;
+  }
+
+  .command-output pre {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner pre {
+    font-size: 4.5px;
+    line-height: 1;
+  }
+
+  html, body, #root {
+    font-size: 10px;
+  }
+}
+
+/* ---- Selection ---- */
+::selection {
+  background: #33ff33;
+  color: #080808;
+}
+
+/* ---- Focus visible ---- */
+.command-input:focus-visible {
+  outline: none;
+}
