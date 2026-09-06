@@ -1,4 +1,5 @@
 import React from 'react';
+import AsciiImage from '../components/AsciiImage';
 
 export function ls() {
   const sections = [
@@ -61,6 +62,11 @@ export function neofetch(args, profile) {
 export function banner() {
   return (
     <div className="command-output banner">
+      {/* Colored ASCII art avatar */}
+      <div style={{ display: 'flex', justifyContent: 'flex-start', marginBottom: '12px', marginTop: '8px' }}>
+        <AsciiImage src="/avatar.png" cols={72} rows={36} />
+      </div>
+      {/* ASCII banner */}
       <pre style={{ color: '#33ff33' }}>{`
  ████████╗███████╗██████╗ ███╗   ███╗███████╗ ██████╗ ██╗     ██╗ ██████╗ 
  ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██╔════╝██╔═══██╗██║     ██║██╔═══██╗

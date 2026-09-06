@@ -1,6 +1,6 @@
 const profile = {
   name: 'Mohamed Jaris',
-  role: 'Full Stack Developer',
+  role: 'Software Developement Engineer',
   location: 'Chennai, Tamil Nadu, India',
   bio: 'Passionate full-stack developer with a love for clean code, open-source, and building things that matter. I thrive in terminal environments and believe in keyboard-first workflows.',
 

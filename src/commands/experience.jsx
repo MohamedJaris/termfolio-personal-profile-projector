@@ -5,7 +5,7 @@ export default function experience(args, profile) {
     <div className="command-output">
       <pre style={{ color: '#33ff33' }}>{`
   ╔══════════════════════════════════════════╗
-  ║           Work Experience               ║
+  ║           Work Experience                ║
   ╚══════════════════════════════════════════╝`}</pre>
       {profile.experience.map((exp, i) => (
         <div key={i} style={{ marginBottom: '16px' }}>
