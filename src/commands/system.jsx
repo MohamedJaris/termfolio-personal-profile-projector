@@ -3,7 +3,7 @@ import React from 'react';
 export function ls() {
   const sections = [
     'about', 'education', 'experience', 'projects',
-    'skills', 'achievements', 'contact',
+    'skills', 'achievements', 'contact', 'hire'
   ];
   return (
     <div className="command-output">
@@ -45,7 +45,7 @@ export function neofetch(args, profile) {
       <pre style={{ color: '#33ff33' }}>{`
         .--.          `}<span style={{ color: '#00bcd4' }}>{profile.name}@portfolio</span>{`
        |o_o |         `}<span style={{ color: '#888' }}>─────────────────────</span>{`
-       |:_/ |         `}<span style={{ color: '#ffcc00' }}>OS:</span>{` TermFolio Linux x86_64
+       |:_/ |         `}<span style={{ color: '#ffcc00' }}>OS:</span>{` TermFolio Windows 11
       //   \\ \\        `}<span style={{ color: '#ffcc00' }}>Host:</span>{` React v18
      (|     | )       `}<span style={{ color: '#ffcc00' }}>Kernel:</span>{` Vite 6.x
     /'\\_   _/\`\\       `}<span style={{ color: '#ffcc00' }}>Shell:</span>{` portfolio-bash 1.0

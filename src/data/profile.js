@@ -1,7 +1,7 @@
 const profile = {
   name: 'Mohamed Jaris',
   role: 'Full Stack Developer',
-  location: 'India',
+  location: 'Chennai, Tamil Nadu, India',
   bio: 'Passionate full-stack developer with a love for clean code, open-source, and building things that matter. I thrive in terminal environments and believe in keyboard-first workflows.',
 
   skills: {
@@ -108,8 +108,7 @@ const profile = {
   ],
 
   contact: {
-    phone : '8438304400',
-    github: 'https://github.com/sirajudeen',
+    github: 'https://github.com/MohamedJaris',
     linkedin: 'https://www.linkedin.com/in/mohamed-jaris-0799502b2/',
     email: 'jarismohamed41@gmail.com',
     resume: 'https://drive.google.com/file/d/1Dmu-yw70jQZXKXptTiSy-JuFE_bk3-8i/view?usp=sharinge.pdf',

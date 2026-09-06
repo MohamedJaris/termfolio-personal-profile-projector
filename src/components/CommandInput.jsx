@@ -68,7 +68,7 @@ const CommandInput = forwardRef(({ onExecute, commandHistory }, ref) => {
       <span className="prompt-at">@</span>
       <span className="prompt-host">portfolio</span>
       <span className="prompt-colon">:</span>
-      <span className="prompt-path">~</span>
+      <span className="prompt-path">Mohamed Jaris</span>
       <span className="prompt-dollar">$ </span>
       <input
         ref={inputRef}
