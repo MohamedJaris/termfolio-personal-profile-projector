@@ -8,28 +8,28 @@ export default function contact(args, profile) {
   ║            Contact Me                   ║
   ╚══════════════════════════════════════════╝`}</pre>
       <p>
-        <span style={{ color: '#ffcc00' }}>📧 Email:    </span>
-        <a href={`mailto:${profile.contact.email}`} target="_blank" rel="noopener noreferrer" style={{ color: '#00bcd4' }}>
-          {profile.contact.email}
-        </a>
+        <span>Phone : </span>
+        8438304400
       </p>
       <p>
-        <span style={{ color: '#ffcc00' }}>🐙 GitHub:   </span>
+        <span>Email : </span>
+        jarismohamed41@gmail.com
+      </p>
+      <p>
+        <span>GitHub : </span>
         <a href={profile.contact.github} target="_blank" rel="noopener noreferrer" style={{ color: '#00bcd4' }}>
           {profile.contact.github}
         </a>
       </p>
       <p>
-        <span style={{ color: '#ffcc00' }}>💼 LinkedIn: </span>
+        <span>LinkedIn : </span>
         <a href={profile.contact.linkedin} target="_blank" rel="noopener noreferrer" style={{ color: '#00bcd4' }}>
           {profile.contact.linkedin}
         </a>
       </p>
       <p>
-        <span style={{ color: '#ffcc00' }}>📄 Resume:   </span>
-        <a href={profile.contact.resume} target="_blank" rel="noopener noreferrer" style={{ color: '#00bcd4' }}>
-          {profile.contact.resume}
-        </a>
+        Feel free to contact me to discuss about technology, innovation 
+        and entrepreneurial ventures! I am all ears to share your throghts and ideas!! 
       </p>
     </div>
   );
